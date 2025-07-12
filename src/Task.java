@@ -1,5 +1,6 @@
 public class Task {
     private boolean isDone;
+    private String name;
 
     public void markasDone() {
         this.isDone = true;
@@ -13,17 +14,12 @@ public class Task {
         this.name = taskName;
     }
 
-    private String name;
-
-
-
-
     public String toString() {
 
         if (this.isDone) {
-            return "[✔]" + "~" + name + "~";
+            return "[DONE]" + "~" + name + "~";
         } else {
-            return "[◯]" + name;
+            return "[NOT DONE]" + name;
         }
     }
 }

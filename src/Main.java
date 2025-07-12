@@ -1,13 +1,25 @@
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String []args) {
+        //TaskManager manager = new TaskManager("*** Give a task! ***");
+        System.out.println("Welcome to To do app!");
+
+
+
         //create the gui
         //ToDoListGUI gui = new todoListGUI();
-        TaskManager manager = new TaskManager("Welcome to my app!");
-        System.out.println(manager);
-        //calls the createtask method
-        manager.createTask();
+        //String newTask = manager.createTask();
+        //System.out.println(input);
+        //calls the createTask method
 
-        Task taskX = new Task("Buy groceries");
+
+
+
+        Task taskX = new Task(input);
+        //Task toString = new Task("test");
+        //System.out.println(toString);
+        System.out.println(taskX);
+
+
     }
 }

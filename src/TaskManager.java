@@ -13,10 +13,9 @@ public class TaskManager {
             return message;
     }
 
-    public void createTask() {
+    public String createTask() {
         String input = scanner.nextLine();
-        System.out.println(input);
-
+        return input;
     }
 
     public void deleteTask() {
