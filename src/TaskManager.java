@@ -1,8 +1,10 @@
-import java.util.Scanner;
+import java.util.ArrayList;
 
+//Acts as the controller / organiser of all your tasks.
 public class TaskManager {
     private String message;
-    Scanner scanner = new Scanner(System.in);
+    private ArrayList<String> Task = new ArrayList<String>();
+
 
         public TaskManager(String message) {
             this.message = message;
@@ -13,9 +15,8 @@ public class TaskManager {
             return message;
     }
 
-    public String createTask() {
-        String input = scanner.nextLine();
-        return input;
+    public void createTask(String name) {
+        Task task = new Task(name);
     }
 
     public void deleteTask() {
